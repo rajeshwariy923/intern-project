@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.school {
+  border: 2px solid #333;
+  padding: 10px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.level {
+  font-size: 18px;
+}
+
+.students,
+.policy,
+.teams {
+  font-size: 14px;
+}

@@ -1,0 +1,174 @@
+html,
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.main {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png");
+  background-size: cover;
+}
+
+.main img {
+  width: 15rem;
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+nav {
+  background-color: OrangeRed;
+  color: White;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+nav ul li {
+  padding: 0.75rem 1.25rem;
+}
+
+.supporting,
+.rating,
+.gallery,
+.location {
+  margin: 4em auto;
+}
+
+.supporting {
+  display: flex;
+  align-items: flex-start;
+  padding: 0 1rem;
+}
+
+.supporting img {
+  width: 10%;
+  height: auto;
+  margin-right: 5%;
+}
+
+.rating {
+  background-color: OrangeRed;
+  height: 20rem;
+  padding: 0 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating h1 {
+  font-size: 2.5rem;
+}
+
+.gallery img {
+  display: block;
+  width: 30%;
+  margin: 1.5%;
+  float: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.location {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.location img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  /* Adjustments for smaller screens */
+
+  /* Example: Reduce font size for headers */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Example: Center-align text in the header */
+  header nav ul {
+    text-align: center;
+  }
+
+  /* Example: Adjust padding for list items */
+  header nav li {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Add more adjustments as needed */
+}
+
+@media only screen and (max-width: 960px) {
+  /* Adjustments for smaller screens */
+
+  /* Set top padding of .main to 0 */
+  .main {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* Adjustments for screens under 700 pixels */
+
+  /* Increase the width of the supporting paragraph */
+  .supporting p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Center the coffee beans image */
+  .supporting img {
+    display: block;
+    margin: 0 auto;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  /* Adjustments for screens under 470 pixels */
+
+  .supporting img {
+    display: none; /* Hide the coffee beans image */
+  }
+
+  h1.rating {
+    font-size: 2rem;
+  }
+
+  .gallery img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+footer {
+  background-color: OrangeRed;
+  padding: 0 1rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5em 0;
+  color: white;
+}
